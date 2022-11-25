@@ -1,0 +1,25 @@
+.img-fluid {
+    height: 250px;
+}
+a {
+    color: indigo;
+}
+h4 {
+    color: turquoise;
+}
+body,
+.svcs div {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.7) 0%, rgba(66,15,168,0.7) 35%, rgba(18,168,196,0.7) 100%);
+}
+.svcs div {
+    border-radius: 40px;
+    margin: 40px;
+}
+.svcs div > a {
+    color: white;
+}
+.svcs div img {
+    border-radius: 40px;
+    margin: 20px 0 20px 0;
+}
