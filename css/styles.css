@@ -1,3 +1,7 @@
+body{
+    width: 85%;
+    margin: auto;
+}
 .img-fluid {
     height: 250px;
 }
@@ -23,3 +27,4 @@ body,
     border-radius: 40px;
     margin: 20px 0 20px 0;
 }
+
