@@ -7,6 +7,3 @@ Sources:
 * [jQuery - Word Count](https://codepen.io/jhawes/pen/xwgEaP)
 
 [GitHub Hosted Page](https://geminipowell.github.io/texas-webgems)
-
-*[jQuery]: a JavaScript library
-*[Bootstrap]: a front-end library that utilizes the Sass compiler for CSS and Popper for JavaScript
