@@ -16,6 +16,24 @@ setInterval(() => {
     let s = now.getSeconds().toString().padStart(2, "0");
     let time = h + ":" + min + ":" + s + " " + amOrPm;
     document.getElementById("time").innerHTML = time;
-}, 1000)
+}, 1000);
 
+let wordLeng = 251; 
 
+let checkWordLeng = (e) => {
+    let leng = $("#commentTextArea").val().split(/[\s]+/);
+    if (leng.length > wordLeng) {
+        if (e.key == 46 || e.key == 8) {
+
+        } else if (e.key < 48 || e.key > 57) {
+            e.preventDefault();
+        }
+    }
+    let wordsRemaining = wordLeng - leng.length;
+    $(".wordsRemaining").html(wordsRemaining+ ' words left');
+    if(wordsRemaining == 0) {
+        $("wordsRemaining").css({
+            'background': 'red'
+        }).prepend('<i class="fa fa-exclamation-triangle"></i>')
+    }
+}

@@ -27,8 +27,10 @@
   <body>
     <header>
       <div class="text-center">
-        <h1 class="text-light hero">Texas WebGems</h1>
-        <h4 class="text-light subhero">Putting the Diamond in Your Rough</h4>
+        <a href="index.html">
+          <h1 class="text-light hero">Texas WebGems</h1>
+          <h4 class="text-light subhero">Putting the Diamond in Your Rough</h4>
+        </a>
       </div>
       <!-- place navbar here -->
       <nav class="head-nav">
@@ -51,7 +53,7 @@
       <h5 class="text-center">Here to answer questions you might have about a project in the works, or for proposals, use the Google form linked below!</h5>
     </section>
     <form>
-      <div class="form-row">
+      <div class="row">
         <div class="form-group col">
           <label for="firstName">First Name</label>
           <input type="name" class="form-control" id="firstName" placeholder="First name" required>
@@ -61,17 +63,37 @@
           <input type="name" class="form-control" id="lastName" placeholder="Last name" required>
         </div>
       </div>
+      <br>
       <div class="form-group">
         <label for="email">E-mail address:</label>
         <input type="email" class="form-control" id="email" placeholder="sample@sample-mail.com" aria-describedby="emailInfo" required>
         <small id="emailInfo" class="form-text text-light">This stays private. We're not into selling your data.</small>
       </div>
+      <br>
       <div class="form-group">
-        <label for="commentTextArea">Give me 100 words or less about what we're accomplishing and what we need to do it - we'll go more into detail down the road!</label>
-        <textarea class="form-control" id="commentTextArea" rows="5"></textarea>
+        <label for="commentTextArea">Can you give me your best 30-second-pitch of the (minor) issue, what the intent of the fix is, and its expected result? (I'm a pretty fast reader...250 words or less)</label>
+        <textarea class="form-control" id="commentTextArea" rows="5" onkeyup="checkWordLeng(this)"></textarea>
+        <div class="row">
+          <div class="col">
+            <span id="charLimit">
+              <strong class="wordsRemaining">250 words left</strong>
+            </span>
+          </div>
+        </div>
       </div>
       <div class="form-group">
         <label for="attachments">Attach any necessary files here so I can visualize what we've got going on!</label>
+        <br>
+        <input type="file" class="form-control-file" id="attachments">
+      </div>
+      <div class="form-group row">
+        <div class="col text-center">
+          <button class="btn btn-dark submit" type="submit">Submit</button>
+        </div>
+      </div>
+      <br>
+      <div class="text-center">
+        <p>Got major problems? Here's a <a href="https://forms.gle/zVxahtdvRULDSixQ9">Google form</a> - let's schedule some time!</p>
       </div>
     </form>
     <footer>
@@ -90,6 +112,15 @@
         </p>
       </div>
     </footer>
+
+    <!-- jQuery -->
+    <script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" 
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" 
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer"
+    ></script>
+
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
