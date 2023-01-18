@@ -8,4 +8,4 @@ Sources:
 * ['Fixes' image](https://www.pexels.com/photo/abstract-business-code-coder-270348/)
 * ['Proposal' image](https://www.pexels.com/photo/silver-laptop-with-graph-on-screen-5833862/)
 
-[GitHub Hosted Page here!](https://geminipowell.github.io/texas-webgems)
+[Website's live here!](https://www.texaswebgems.com)
