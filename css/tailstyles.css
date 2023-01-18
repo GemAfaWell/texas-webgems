@@ -2264,15 +2264,6 @@ body {
   margin: auto;
 }
 
-#containerTings {
-  position: relative;
-  min-height: 100vh;
-}
-
-#wrapper {
-  padding-bottom: 2.5rem;
-}
-
 .img-fluid {
   height: 250px;
 }
@@ -2289,9 +2280,9 @@ body,
 .svcs div {
   background: linear-gradient(
     90deg,
-    rgba(2, 0, 36, 0.7) 0%,
-    rgba(66, 15, 168, 0.7) 35%,
-    rgba(18, 168, 196, 0.7) 100%
+    rgba(2, 0, 36, 0.55) 0%,
+    rgba(66, 15, 168, 0.55) 35%,
+    rgba(18, 168, 196, 0.55) 100%
   );
 }
 
