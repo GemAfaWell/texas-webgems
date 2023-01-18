@@ -2,10 +2,15 @@
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ED8L598C8G"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-ED8L598C8G"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag() {
+        dataLayer.push(arguments);
+      }
       gtag('js', new Date());
 
       gtag('config', 'G-ED8L598C8G');
@@ -17,46 +22,51 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta 
-      name = "description"
-      content = "Texas WebGems is a web design and development firm based in Austin, Texas. We specialize in creating websites that are both beautiful and functional. We also offer website maintenance and consultation services."
-    />
-
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
+    <meta
+      name="description"
+      content="Texas WebGems is a web design and development firm based in Austin, Texas. We specialize in creating websites that are both beautiful and functional. We also offer website maintenance and consultation services."
     />
 
     <!-- Custom Styles -->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/tailstyles.css" rel="stylesheet" />
   </head>
 
   <body>
-    <header>
-      <div class="text-center">
+    <header class="flex flex-col items-center">
+      <div>
         <a href="index.html">
-          <h1 class="text-light hero">Texas WebGems</h1>
-          <h4 class="text-light subhero">Putting the Diamond in Your Rough</h4>
+          <img
+            class="self-center img-fluid"
+            src="assets/images/texas-webgems-high-resolution-logo-color-on-transparent-background.png"
+            alt="Texas WebGems logo"
+          />
         </a>
       </div>
       <!-- place navbar here -->
-      <nav class="head-nav">
+      <nav class="justify-center bg-white head-nav">
         <ul
-          class="list-unstyled list-group list-group-horizontal list-group-flush justify-content-center"
+          class="inline-flex flex-row flex-auto mb-0 border border-gray-300 rounded list-unstyled list-group-horizontal"
         >
-          <li class="list-group-item"><a href="services.html">Services</a></li>
-          <li class="list-group-item">
-            <a href="portfolio.html">Portfolio</a>
+          <li
+            class="relative block px-6 py-3 -mb-px no-underline border border-l-0 border-r-0 border-gray-300"
+          >
+            <a href="services.html">Services</a>
           </li>
-          <li class="list-group-item"><a href="contact.html">Contact</a></li>
+          <li
+            class="relative block px-6 py-3 -mb-px no-underline border border-l-0 border-r-0 border-gray-300"
+          >
+            <a href="https://github.com/GeminiPowell">Portfolio</a>
+          </li>
+          <li
+            class="relative block px-6 py-3 -mb-px no-underline border border-l-0 border-r-0 border-gray-300"
+          >
+            <a href="contact.html">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
     <section>
-      <div class="text-center text-light">
+      <div class="text-center text-gray-100">
         <p>
           Welcome! It's good to see you!
           <br />
@@ -72,140 +82,95 @@
         for proposals, use the Google form linked below!
       </h5>
     </section>
-    <form action="https://getform.io/f/79647d64-6e7c-497e-a79d-7a2c99d92216" method="POST" enctype="multipart/form-data" target="_blank" name="contactForm">
-      <div class="row">
-        <div class="form-group col">
-          <label for="firstName">First Name</label>
-          <input
-            name="firstName"
-            type="name"
-            class="form-control"
-            id="firstName"
-            placeholder="First name"
-            aria-label="First name"
-            required
-          />
-        </div>
-        <div class="form-group col">
-          <label for="lastName">Last Name</label>
-          <input
-            name="lastName"
-            type="name"
-            class="form-control"
-            id="lastName"
-            placeholder="Last name"
-            aria-label="Last name"
-            required
-          />
-        </div>
-      </div>
-      <br />
-      <div class="form-group">
-        <label for="email">E-mail address:</label>
+    <form
+      action="https://getform.io/f/79647d64-6e7c-497e-a79d-7a2c99d92216"
+      method="POST"
+      id="contact"
+      class="flex flex-col w-3/5 max-w-3xl mx-auto my-auto text-gray-800 bg-white p-14"
+      enctype="multipart/form-data"
+    >
+      <div class="flex flex-col w-full mb-4">
+        <label for="name">Name</label>
         <input
-          name="E-mail address"
-          type="email"
-          class="form-control"
-          id="email"
-          placeholder="sample@sample-mail.com"
-          aria-describedby="emailInfo"
-          required
+          type="text"
+          id="name"
+          name="name"
+          class="w-full px-4 py-2 border border-gray-300 rounded"
+          placeholder="Your name"
         />
-        <small id="emailInfo" class="form-text text-light"
-          >This stays private. We're not into selling your data.</small
-        >
       </div>
-      <br />
-      <div class="form-group">
-        <label for="commentTextArea"
-          >Can you give me your best 30-second-pitch of the (minor) issue, what
-          the intent of the fix is, and its expected result? (I'm a pretty fast
-          reader...250 words or less)</label
-        >
+      <div class="flex flex-col w-full mb-4">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="w-full px-4 py-2 border border-gray-300 rounded"
+          placeholder="Your email"
+        />
+      </div>
+      <div class="flex flex-col w-full mb-4">
+        <label for="message">Message</label>
         <textarea
-          name="Description"
-          class="form-control"
-          id="commentTextArea"
-          rows="5"
-          onkeyup="checkWordLeng(this)"
-        ></textarea>
-        <div class="row">
-          <div class="col">
-            <span id="charLimit">
-              <strong class="wordsRemaining">250 words left</strong>
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="attachments"
-          >Attach any necessary files here so I can visualize what we've got
-          going on!</label
+          id="message"
+          name="message"
+          class="w-full px-4 py-2 border border-gray-300 rounded"
+          placeholder="Your message"
+          onchange="checkWordLeng()"
         >
-        <br />
-        <div>
-          <input type="file" name="files[]" class="form-control-file" id="attachments" multiple />
-          <small class="form-text text-light">5MB max - see the Google form below if you need more room
-        </div>
+        </textarea>
       </div>
-      <div class="form-group row">
-        <input type="hidden" name="_gotcha" style="display:none !important">
+      <div class="flex flex-col w-full mb-4">
+        <label for="file">Additional files:</label>
+        <input
+          type="file"
+          id="file"
+          name="file"
+          class="w-full px-4 py-2 border border-gray-300 rounded"
+          placeholder="Upload here"
+        />
+        <small>5MB limit</small>
       </div>
-      <div class="form-group row">
-        <div class="col text-center">
-          <button class="btn btn-dark submit" type="submit" onsubmit="document.getElementsByName("contact").reset()">Submit</button>
-        </div>
-      </div>
-      <br />
-      <div class="text-center">
-        <p>
-          Got major problems? Here's a
-          <a href="https://forms.gle/zVxahtdvRULDSixQ9">Google form</a> - let's
-          schedule some time!
-        </p>
+      <input type="hidden" name="_gotcha" style="display:none !important">
+      <div class="flex items-center justify-center rounded-md">
+        <button
+          type="submit"
+          class="w-full px-5 py-3 font-bold text-white bg-teal-500 rounded"
+        >
+          Submit
+        </button>
       </div>
     </form>
-    <footer>
+    <footer class="flex flex-col items-center">
       <!-- place footer here -->
-      <nav class="foot-nav">
+      <nav class="justify-center bg-white head-nav">
         <ul
-          class="list-unstyled list-group list-group-horizontal list-group-flush justify-content-center"
+          class="inline-flex flex-row flex-auto mb-0 border border-gray-300 rounded list-unstyled list-group-horizontal"
         >
-          <li class="list-group-item"><a href="services.html">Services</a></li>
-          <li class="list-group-item">
-            <a href="portfolio.html">Portfolio</a>
+          <li
+            class="relative block px-6 py-3 -mb-px no-underline border border-l-0 border-r-0 border-gray-300"
+          >
+            <a href="services.html">Services</a>
           </li>
-          <li class="list-group-item"><a href="contact.html">Contact</a></li>
+          <li
+            class="relative block px-6 py-3 -mb-px no-underline border border-l-0 border-r-0 border-gray-300"
+          >
+            <a href="https://github.com/GeminiPowell">Portfolio</a>
+          </li>
+          <li
+            class="relative block px-6 py-3 -mb-px no-underline border border-l-0 border-r-0 border-gray-300"
+          >
+            <a href="contact.html">Contact</a>
+          </li>
         </ul>
       </nav>
-      <div class="container copyright text-center">
+      <div class="container mx-auto text-center sm:px-4 copyright">
         <p>
           &copy;2022 <a href="index.html">Texas WebGems</a> - a
           <a href="https://github.com/GeminiPowell">Gemini Powell</a> firm
         </p>
       </div>
     </footer>
-
-    <!-- jQuery -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-
-    <!-- Bootstrap JavaScript Libraries -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"
-    ></script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-      crossorigin="anonymous"
-    ></script>
 
     <script src="js/app.js"></script>
   </body>
