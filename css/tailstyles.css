@@ -2264,15 +2264,6 @@ body {
   margin: auto;
 }
 
-#containerTings {
-  position: relative;
-  min-height: 100vh;
-}
-
-#wrapper {
-  padding-bottom: 2.5rem;
-}
-
 .img-fluid {
   height: 250px;
 }
@@ -2291,7 +2282,11 @@ body,
     90deg,
     rgba(2, 0, 36, 0.55) 0%,
     rgba(66, 15, 168, 0.55) 35%,
+<<<<<<< HEAD
     rgba(18, 168, 196, 0.6) 100%
+=======
+    rgba(18, 168, 196, 0.55) 100%
+>>>>>>> 2884f7f6905a44ca12f2114a801067fe08d6098f
   );
 }
 
