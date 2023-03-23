@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-ED8L598C8G"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-ED8L598C8G');
+    </script>
+    <title>Contact Us!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Texas WebGems is a web design and development firm based in Austin, Texas. We specialize in creating websites that are both beautiful and functional. We also offer website maintenance and consultation services."
+    />
+
+    <!-- Custom Styles -->
+    <link href="css/tailstyles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header class="flex flex-col items-center">
+      <div>
+        <a href="index.html">
+          <img
+            class="self-center img-fluid"
+            src="assets/images/texas-webgems-high-resolution-logo-color-on-transparent-background.png"
+            alt="Texas WebGems logo"
+          />
+        </a>
+      </div>
+      <!-- place navbar here -->
+      <nav class="justify-center bg-white head-nav">
+        <ul
+          class="inline-flex flex-row flex-auto mb-0 border border-gray-300 rounded list-unstyled list-group-horizontal"
+        >
+          <li
+            class="relative block px-6 py-3 -mb-px no-underline border border-l-0 border-r-0 border-gray-300"
+          >
+            <a href="services.html">Services</a>
+          </li>
+          <li
+            class="relative block px-6 py-3 -mb-px no-underline border border-l-0 border-r-0 border-gray-300"
+          >
+            <a href="https://gemafawell.dev">Portfolio</a>
+          </li>
+          <li
+            class="relative block px-6 py-3 -mb-px no-underline border border-l-0 border-r-0 border-gray-300"
+          >
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div class="text-center text-gray-100">
+        <p>
+          Welcome! It's good to see you!
+          <br />
+          Today's date is <span id="date"></span>, and it's currently
+          <span id="time"></span>
+        </p>
+      </div>
+    </section>
+    <section>
+      <h2 class="text-center">Let's Chat!</h2>
+      <h5 class="text-center">
+        Here to answer questions you might have about a project in the works!
+      </h5>
+    </section>
+    <form
+         name="contact"
+         method="POST"
+         data-netlify="true"
+    >
+      <div class="flex flex-col w-full mb-4">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          class="w-full px-4 py-2 border border-gray-300 rounded"
+          placeholder="Your name"
+        />
+      </div>
+      <div class="flex flex-col w-full mb-4">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="w-full px-4 py-2 border border-gray-300 rounded"
+          placeholder="Your email"
+        />
+      </div>
+      <div class="flex flex-col w-full mb-4">
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          class="w-full px-4 py-2 border border-gray-300 rounded"
+          placeholder="Your message"
+          onchange="checkWordLeng()"
+        >
+        </textarea>
+      </div>
+      <div class="flex flex-col w-full mb-4">
+        <label for="file">Additional files:</label>
+        <input
+          type="file"
+          id="file"
+          name="file"
+          class="w-full px-4 py-2 border border-gray-300 rounded"
+          placeholder="Upload here"
+        />
+        <small>5MB limit</small>
+      </div>
+      <input type="hidden" name="_gotcha" style="display:none !important">
+      <div class="flex items-center justify-center rounded-md">
+        <button
+          type="submit"
+          class="w-full px-5 py-3 font-bold"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+    <footer class="flex flex-col items-center">
+      <!-- place footer here -->
+      <nav class="justify-center bg-white head-nav">
+        <ul
+          class="inline-flex flex-row flex-auto mb-0 border border-gray-300 rounded list-unstyled list-group-horizontal"
+        >
+          <li
+            class="relative block px-6 py-3 -mb-px no-underline border border-l-0 border-r-0 border-gray-300"
+          >
+            <a href="services.html">Services</a>
+          </li>
+          <li
+            class="relative block px-6 py-3 -mb-px no-underline border border-l-0 border-r-0 border-gray-300"
+          >
+            <a href="https://gemafawell.dev">Portfolio</a>
+          </li>
+          <li
+            class="relative block px-6 py-3 -mb-px no-underline border border-l-0 border-r-0 border-gray-300"
+          >
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="container mx-auto text-center sm:px-4 copyright">
+        <p>
+          &copy;2022 <a href="index.html">Texas WebGems</a> - a
+          <a href="https://github.com/GemAfaWell">Gemini Powell</a> firm
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/24141320.js"></script>
+    <!-- End of HubSpot Embed Code -->
+  </body>
+</html>

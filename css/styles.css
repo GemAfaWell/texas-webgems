@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  width: 90%;
+  margin: auto;
+}
+#containerTings {
+  position: relative;
+  min-height: 100vh;
+}
+#wrapper {
+  padding-bottom: 2.5rem;
+}
+.img-fluid {
+  height: 250px;
+}
+a {
+  color: indigo;
+}
+h4 {
+  color: turquoise;
+}
+body,
+.svcs div {
+  background: teal;
+}
+.svcs div {
+  border-radius: 40px;
+  margin: 40px;
+}
+.svcs div > a {
+  color: white;
+}
+.svcs div img {
+  border-radius: 40px;
+  margin: 20px 0 20px 0;
+}
+label {
+  font-weight: bold;
+}
+div {
+  margin: 10px;
+}
+.website,
+.updates,
+.consult {
+  background: linear-gradient(
+    90deg,
+    rgba(18, 168, 196, 0.5) 0%,
+    rgba(66, 15, 168, 0.5) 35%,
+    rgba(2, 0, 36, 0.5) 100%
+  );
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: lightslategrey;
+}
+nav a {
+  color: indigo;
+}
